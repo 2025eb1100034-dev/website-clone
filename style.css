@@ -16,7 +16,8 @@
 .nav-logo{
     padding: 5px;
     height: 65px;
-    width: 210px;
+    width: 100%;
+    max-width: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +25,8 @@
 } 
 .logo{
     height: 60px;
-    width: 210px;
+    width: 100%;
+    max-width: 210px;
     background-image: url("image-2.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,7 +61,8 @@
 /*  box 3  */
 .nav-search{
     height: 60px;
-    width: 590px;
+    width: 100%;
+    max-width: 590px;
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
@@ -73,7 +76,8 @@
     height: 60px;
     background-color: #f3f3f3;
     text-align: center;
-    width: 50px;
+    width: 100%;
+    max-width: 50px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border: none;
@@ -87,7 +91,8 @@
 }
 .search-icon{
     height: 60px;
-    width: 45px;
+    width: 100%;
+    max-width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +140,8 @@ span{
 }
 .panel-all{
     height: 30px;
-    width: 50px;
+    width: 100%;
+    max-width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +159,8 @@ span{
 }
 .panel-deals{
     height: 26px;
-    width: 190px;
+    width: 100%;
+    max-width: 190px;
     font-size: 0.9rem;
     font-weight: 700;
     display: flex;
@@ -259,7 +266,8 @@ ul a{
 }
 .foot-panel3-logo{
     height: 80px;
-    width: 264px;
+    width: 100%;
+    max-width: 264px;
     background-image: url("image-2.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -285,4 +293,49 @@ ul a{
 .copyright{
     padding-top: 5px;
 
+}
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        font-size: 14px;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav-search{
+        order: 3;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .box{
+        width: 90%;
+    }
+    .panel{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5px;
+    }
+    .panel-ops{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .panel-ops p{
+        margin: 5px;
+    }
+    .hero-section{
+        height: 250px;
+        background-position: center;
+    }
+    .foot-panel2{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+    ul{
+        margin-bottom: 20px;
+    }
 }
