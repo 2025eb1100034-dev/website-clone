@@ -4,6 +4,20 @@
     font-family: arial;
     border: border-box;  /* it includes border inside given content area*/
 }
+.mobile-warning{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40%;
+    z-index: 9999;
+}
 .navbar{
     height: 110px;
     color: white;
@@ -294,48 +308,10 @@ ul a{
     padding-top: 5px;
 
 }
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-    }
-    .navbar{
-        flex-wrap: wrap;
-        font-size: 14px;
-        height: auto;
-        padding: 10px 0;
-    }
-    .nav-search{
-        order: 3;
-        width: 95%;
-        margin-top: 10px;
-    }
-    .box{
-        width: 90%;
-    }
-    .panel{
-        flex-wrap: wrap;
-        height: auto;
-        padding: 5px;
-    }
-    .panel-ops{
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .panel-ops p{
-        margin: 5px;
-    }
-    .hero-section{
-        height: 250px;
-        background-position: center;
-    }
-    .foot-panel2{
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        text-align: center;
-    }
-    ul{
-        margin-bottom: 20px;
+
+@media(max-width:768px){
+    .mobile-warning{
+        display: block;
     }
 }
+
